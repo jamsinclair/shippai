@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $background;
+  color: $text;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: lighten($text, 20);
+
+  &:hover {
+    color: $neutral;
+    text-decoration: underline;
+  }
+}

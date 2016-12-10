@@ -1,0 +1,10 @@
+@import "../styles/_colours";
+
+$spinkit-spinner-color: $neutral;
+@import "../../node_modules/spinkit/scss/spinners/3-wave.scss";
+
+.loading-text {
+  color: $neutral;
+  text-align: center;
+  font-weight: 700;
+}

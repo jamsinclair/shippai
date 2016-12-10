@@ -1,0 +1,40 @@
+@import "../styles/_colours";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    color: $neutral;
+
+    &:hover {
+      color: darken($neutral, 5);
+      text-decoration: none;
+    }
+  }
+
+  .nav-item--right {
+    position: absolute;
+    right: 30px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 0.8rem;
+    writing-mode: vertical-rl;
+  }
+}

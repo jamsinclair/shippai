@@ -1,0 +1,114 @@
+@import "../../styles/_colours";
+
+:host {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $framing;
+    background: white;
+    margin-bottom: 10px;
+    min-height: 100px;
+  }
+
+  .box-header {
+    display: flex;
+  }
+
+  .box-content {
+    padding: 20px;
+  }
+
+  .box-title {
+    display: block;
+  }
+
+  .box-status-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box-status-grid-header {
+    width: 100%;
+    padding: 0 20px;
+    border-top: 1px solid $framing;
+    border-bottom: 1px solid $framing;
+  }
+
+  .box-status {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: 60px;
+    width: 100px;
+
+    .icon {
+      margin: 0 auto;
+      fill: white;
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+
+    &.success {
+      background: $good;
+      &:hover {
+        background: rgba($good, .8);
+      }
+    }
+
+    &.pending {
+      background: $undecided;
+      &:hover {
+        background: rgba($undecided, .8);
+      }
+    }
+
+    &.neutral {
+      background: $neutral;
+    }
+
+    &.error,
+    &.failure {
+      background: $bad;
+      &:hover {
+        background: rgba($bad, .8);
+      }
+    }
+  }
+
+  .box-status--none {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .box-status--overall {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: auto;
+    width: 50px;
+  }
+
+  @media screen and (min-width: 801px) {
+    .box {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .box-status-grid {
+      justify-content: flex-end;
+      max-width: 65%;
+    }
+
+    .box-status-grid-header {
+      display: none;
+    }
+
+    .box-status {
+      height: auto;
+      flex-grow: 0;
+    }
+  }
+}

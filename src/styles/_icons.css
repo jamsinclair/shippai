@@ -1,0 +1,21 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.icon-spin {
+  animation: 1.8s ease-in-out infinite spin;
+}
+
+.icon-close {
+  width: 0.7861328125em;
+}

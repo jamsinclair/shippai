@@ -1,0 +1,45 @@
+input {
+  font-family: inherit;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid $framing;
+  border-radius: 3px;
+
+  &:focus {
+    border-color: $neutral;
+    outline: none;
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: 1px solid $framing;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0 14px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $text;
+  }
+
+  &:active {
+    border-color: $neutral;
+  }
+}
+
+form {
+  input,
+  button {
+    margin: 5px;
+  }
+}
