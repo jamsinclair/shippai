@@ -3,7 +3,11 @@
 
 A Clientside GitHub Pull Request Commit Status Visualiser
 
-# Usage
+## Screenshots
+<img width="1103" alt="screen shot 2016-12-10 at 20 49 02" src="https://cloud.githubusercontent.com/assets/5964236/21072101/31056f0a-bf1c-11e6-9080-296dc0bd73e0.png">
+<img width="1089" alt="screen shot 2016-12-10 at 20 50 30" src="https://cloud.githubusercontent.com/assets/5964236/21072103/32d35ebe-bf1c-11e6-9442-b1e20222fc93.png">
+
+## Usage
 Ensure you have the package manager [Yarn](https://yarnpkg.com/en/docs/install) installed. 
 
 Run `yarn` to install the dependencies.
