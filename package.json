@@ -1,7 +1,7 @@
 {
   "name": "shippai",
   "version": "0.1.0",
-  "description": "Status Check Dasboard for GitHub Pull Requests",
+  "description": "A Clientside GitHub Commit Status Visualiser for Pull Requests",
   "author": "jamsinclair <jamsinclairnz@gmail.com>",
   "scripts": {
     "clean": "rimraf dist && mkdir dist",
@@ -12,7 +12,7 @@
     "build": "yarn run html && yarn run bundle && yarn run compress",
     "deploy": "yarn run build && surge ./dist shippai.surge.sh"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": "true",
   "dependencies": {
     "autoprefixer": "^6.5.3",
